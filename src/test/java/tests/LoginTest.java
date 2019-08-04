@@ -40,7 +40,7 @@ public class LoginTest {
     public void logoutTest(){
         BrowserUtilitiy.sleep(5);
         driver.findElement(By.id("ctl00_logout")).click();
-
+        Assert.assertEquals(driver.getTitle(), "Web Orders Login");
     }
 
     @AfterClass
